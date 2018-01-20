@@ -24,6 +24,11 @@
             attribution: '&copy; ' + mapLink + ' Contributors',
             maxZoom: 18,
             }).addTo(map);
+          var image = L.imageOverlay(
+            'http://www.lib.utexas.edu/maps/historical/newark_nj_1922.jpg',
+            [[40.712216, -74.22655], [40.773941, -74.12544]], {
+            opacity: .6
+        }).addTo(map);
     </script>
 </body>
 </html>
